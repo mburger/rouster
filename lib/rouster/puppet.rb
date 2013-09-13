@@ -5,6 +5,10 @@ require 'net/https'
 require 'socket'
 require 'uri'
 
+# TODO figure out how to find this in a generic way
+$LOAD_PATH << '/opt/puppet/lib/site_ruby/1.8/puppet/external/'
+require 'pson/common'
+
 # TODO use @cache_timeout to invalidate data cached here
 
 class Rouster
