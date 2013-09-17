@@ -8,6 +8,8 @@ require 'uri'
 # TODO better
 $LOAD_PATH << '/opt/puppet/lib/site_ruby/1.8/' # for puppet/external/pson/version <-- this is pretty ridiculous
 $LOAD_PATH << '/opt/puppet/lib/site_ruby/1.8/puppet/external/' # for pson/common
+require 'pson/common'
+require 'pson/version'
 require 'pson/pure'
 
 # TODO use @cache_timeout to invalidate data cached here
